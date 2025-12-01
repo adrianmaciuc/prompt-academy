@@ -95,7 +95,7 @@ Start with The Grandfather riddle:
 AI Chat : Local, chatgpt.com or m365 copilot
 Prompt:
 
-```text
+```md
 Generate a CSV file with 500 rows of fictional customer data. Columns: Name, Age, Email, Purchase Amount, Date, and Website Link. I need half of it to be accurate and half to be messy:
 
 - Typos in names
@@ -140,7 +140,7 @@ https://example.com
 bad link:
 link@site
 http://brokenlink
-``
+```
 
 Then prompt AI:
 
@@ -158,8 +158,6 @@ Clean this CSV according to the rules in the markdown file.
 - Document what worked and what didn’t.
 
 
-`
-
 
 
 ✅ Day 2 Agenda
@@ -169,28 +167,19 @@ Clean this CSV according to the rules in the markdown file.
 Discuss briefly about the Planning Pattern
 
 Planning and agentic approach on executing tasks
-- Use an AI and ask it to create a prompt for an agent to build
+
 "help me develop a plan to build this app"
-"i need you to create a markdown file for instructions for an agent to build this app"
-"based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it one single file, do it" 
+"I need you to create a markdown file for instructions for an agent to build this app"
+"based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it in one single file, do it. use javascript" 
 
 Example of tool to build:
+## JSON Formatter & Diff Checker
 (worked well in chatgpt - chatgpt hosted - react app)
-JSON Formatter & Diff Checker
 Paste version A and version B. It formats both and highlights structural differences. A simple tree comparison engine, perfect for spotting sneaky API changes.
 
 ## Date/Time Globe Calculator
 (worked well in chatgpt - chatgpt hosted - only js and html)
 You pick a locale and a time zone and you pick a second locale . Entering a certain date and time in the past present or future and it provides the exact equivalent in the other locale and timezone, accounting for daylight savings and locale-specific formats.
-
-## Test Data Generator (Mini Edition)
-(worked in vscode - copilot - local)
-You choose a data type—email, phone number, username, date range, numeric bounds—and it spits out valid, invalid, and borderline values. It’s like a vending machine for edge cases.
-
-## Tiny State Machine Visualizer
-(worked in vscode - multiple inputs to fix - local)
-You define states and transitions via quick text input, and it produces a diagram plus transition validation. Handy for spotting impossible or missing flows in UI logic.
-Other examples:
 
 ## Create a daily to-do app for yourself where:
 (worked well in chatgpt - chatgpt hosted - only js and html)
@@ -200,6 +189,22 @@ you can add notes to tasks if needed
 you can mark them partially done
 you can generate at the end of the day a summary of all tasks done  
 
+## Test Data Generator (Mini Edition)
+(worked in vscode - copilot - local)
+You choose a data type—email, phone number, username, date range, numeric bounds—and it spits out valid, invalid, and borderline values. It’s like a vending machine for edge cases.
+
+## Tiny State Machine Visualizer
+(worked in vscode - multiple inputs to fix - local)
+You define states and transitions via quick text input, and it produces a diagram plus transition validation. Handy for spotting impossible or missing flows in UI logic.
+
+## File Size Simulator
+(worked in vscode - local only)
+Purpose: Creates dummy files of specified size for upload tests.
+Inputs: File size (KB/MB), file type.
+Output: Generated file.
+You can also create a dummy file as a csv file with x number of rows and y number of columns with random data inside
+
+Other examples:
 
 to TEST
 
@@ -214,11 +219,7 @@ Output: Difference percentage or highlighted diff image.
 ## Duplicate Finder
 Detects and lists duplicate entries in pasted data or CSV files.
 
-## File Size Simulator
-Purpose: Creates dummy files of specified size for upload tests.
-Inputs: File size (KB/MB), file type.
-Output: Generated file.
-You can also create a dummy file as a csv file with x number of rows and y number of columns with random data inside
+
 
 ### Session 2:
 
