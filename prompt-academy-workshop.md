@@ -148,32 +148,6 @@ Then prompt AI:
 Clean this CSV according to the rules in the markdown file.
 ```
 
-**10 Engaging Exercises:**
-
-1. Remove rows with missing values.
-2. Delete rows where Age is not numeric.
-3. Capitalize all names.
-4. Validate emails.
-5. Correct spelling mistakes.
-6. Drop Purchase Amount > 999.
-7. Replace empty Age with “Unknown.”
-8. Convert dates to YYYY-MM-DD.
-9. Add new column: Total with Tax (+10%).
-10. Validate and fix Website Link column.
-
-
-✅ Home Assignments for Day 1
-
-**From Session 1: Prompt Variations**
-
-- Create 5 variations of the same prompt by adding:
-  - Persona (e.g., teacher, comedian, CEO)
-  - Output style (bullet points, story, poem)
-  - Scope (for kids, for experts)
-  - Few-shot examples (good vs bad)
-
-- Document how each variation changes the output.
-
 **From Session 2: Messy Data Challenge**
 
 - Generate your own messy CSV with the extra Website Link column.
@@ -185,40 +159,67 @@ Clean this CSV according to the rules in the markdown file.
 - Bonus: Ask AI to fetch additional info from the Website Link column (e.g., “Visit each link and summarize the homepage content”).
 - Document what worked and what didn’t.
 
+
+
+
 ✅ Day 2 Agenda
 
-### Session 1: AI for Different Fields
+### Session 1: Vibe Coding - Build your own tools
 
-- Practice creating outputs for marketing, education, research.
-- Summary: Patterns and best practices.
+Discuss briefly about the Planning Pattern
 
-### Session 2: Ethics & Limitations
+Planning and agentic approach on executing tasks
+- Use an AI and ask it to create a prompt for an agent to build
+"help me develop a plan to build this app"
+"i need you to create a markdown file for instructions for an agent to build this app"
+"based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it one single file, do it" 
 
-- Practice testing AI boundaries.
-- Summary: Responsible use, bias, privacy.
+Example of tool to build:
+(worked well in chatgpt - chatgpt hosted - react app)
+JSON Formatter & Diff Checker
+Paste version A and version B. It formats both and highlights structural differences. A simple tree comparison engine, perfect for spotting sneaky API changes.
 
-✅ Resources to Share
+## Date/Time Globe Calculator
+(worked well in chatgpt - chatgpt hosted - only js and html)
+You pick a locale and a time zone and you pick a second locale . Entering a certain date and time in the past present or future and it provides the exact equivalent in the other locale and timezone, accounting for daylight savings and locale-specific formats.
 
-**Beginner guides:**
+## Test Data Generator (Mini Edition)
+(worked in vscode - copilot - local)
+You choose a data type—email, phone number, username, date range, numeric bounds—and it spits out valid, invalid, and borderline values. It’s like a vending machine for edge cases.
 
-- https://platform.openai.com/docs/guides
-- https://learn.microsoft.com/en-us/copilot/
+## Tiny State Machine Visualizer
+(worked in vscode - multiple inputs to fix - local)
+You define states and transitions via quick text input, and it produces a diagram plus transition validation. Handy for spotting impossible or missing flows in UI logic.
+Other examples:
 
-**Books:**
+## Create a daily to-do app for yourself where:
+(worked well in chatgpt - chatgpt hosted - only js and html)
+you can add tasks, remove tasks, mark tasks as done
+you can set reminders for tasks that popup at a certain time
+you can add notes to tasks if needed
+you can mark them partially done
+you can generate at the end of the day a summary of all tasks done  
 
-- AI Superpowers
-- Human Compatible
 
-**Free tools:**
+to TEST
 
-- ChatGPT
-- Bing Copilot
-- Canva AI
+## Network traffic analyzer
+You enter an url, it fetches all the network calls provided and saves them in a structured way, for you to copy paste and compare with a second url 
 
-✅ New Additions Incorporated:
-- ✔ Practice-first approach
-- ✔ Prompt layering exercise
-- ✔ Messy CSV generation with Website Link column
-- ✔ Markdown-based cleaning instructions
-- ✔ Home assignments for prompt variations and data cleaning with link validation
+## Screenshot Comparator
+Purpose: Compares two screenshots for pixel differences.
+Inputs: Two image files.
+Output: Difference percentage or highlighted diff image.
+
+## Duplicate Finder
+Detects and lists duplicate entries in pasted data or CSV files.
+
+## File Size Simulator
+Purpose: Creates dummy files of specified size for upload tests.
+Inputs: File size (KB/MB), file type.
+Output: Generated file.
+You can also create a dummy file as a csv file with x number of rows and y number of columns with random data inside
+
+### Session 2:
+
 
