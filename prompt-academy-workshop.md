@@ -144,9 +144,7 @@ http://brokenlink
 
 Then prompt AI:
 
-```
 Clean this CSV according to the rules in the markdown file.
-```
 
 **From Session 2: Messy Data Challenge**
 
@@ -159,6 +157,8 @@ Clean this CSV according to the rules in the markdown file.
 - Bonus: Ask AI to fetch additional info from the Website Link column (e.g., “Visit each link and summarize the homepage content”).
 - Document what worked and what didn’t.
 
+
+`
 
 
 
