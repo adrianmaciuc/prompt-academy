@@ -95,7 +95,6 @@ Start with The Grandfather riddle:
 AI Chat : Local, chatgpt.com or m365 copilot
 Prompt:
 
-```md
 Generate a CSV file with 500 rows of fictional customer data. Columns: Name, Age, Email, Purchase Amount, Date, and Website Link. I need half of it to be accurate and half to be messy:
 
 - Typos in names
@@ -105,7 +104,7 @@ Generate a CSV file with 500 rows of fictional customer data. Columns: Name, Age
 - Random symbols in Age
 - Numbers > 999 in Purchase Amount
 - Website Link column should have broken or incomplete URLs
-```
+
 
 **Step 2: Define “Clean” in Markdown**
 
@@ -115,7 +114,7 @@ Possible answer if no definition provided:
 Participants create a `.md` file or just a prompt with custom cleaning rules. Example:
 
 ### Data Cleaning Instructions
-```md
+
 - Remove rows where Purchase Amount > 999
 - a name should be made out of two words - no special characters
 - age should be a number between 1 and 90
@@ -140,7 +139,7 @@ https://example.com
 bad link:
 link@site
 http://brokenlink
-```
+
 
 Then prompt AI:
 
@@ -162,7 +161,7 @@ Clean this CSV according to the rules in the markdown file.
 
 ✅ Day 2 Agenda
 
-### Session 1: Vibe Coding - Build your own tools
+## Session 1: Vibe Coding - Build your own tools
 
 Discuss briefly about the Planning Pattern
 
@@ -173,15 +172,15 @@ Planning and agentic approach on executing tasks
 "based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it in one single file, do it. use javascript" 
 
 Example of tool to build:
-## JSON Formatter & Diff Checker
+### JSON Formatter & Diff Checker
 (worked well in chatgpt - chatgpt hosted - react app)
 Paste version A and version B. It formats both and highlights structural differences. A simple tree comparison engine, perfect for spotting sneaky API changes.
 
-## Date/Time Globe Calculator
+### Date/Time Globe Calculator
 (worked well in chatgpt - chatgpt hosted - only js and html)
 You pick a locale and a time zone and you pick a second locale . Entering a certain date and time in the past present or future and it provides the exact equivalent in the other locale and timezone, accounting for daylight savings and locale-specific formats.
 
-## Create a daily to-do app for yourself where:
+### Create a daily to-do app for yourself where:
 (worked well in chatgpt - chatgpt hosted - only js and html)
 you can add tasks, remove tasks, mark tasks as done
 you can set reminders for tasks that popup at a certain time
@@ -189,15 +188,15 @@ you can add notes to tasks if needed
 you can mark them partially done
 you can generate at the end of the day a summary of all tasks done  
 
-## Test Data Generator (Mini Edition)
+### Test Data Generator (Mini Edition)
 (worked in vscode - copilot - local)
 You choose a data type—email, phone number, username, date range, numeric bounds—and it spits out valid, invalid, and borderline values. It’s like a vending machine for edge cases.
 
-## Tiny State Machine Visualizer
+### Tiny State Machine Visualizer
 (worked in vscode - multiple inputs to fix - local)
 You define states and transitions via quick text input, and it produces a diagram plus transition validation. Handy for spotting impossible or missing flows in UI logic.
 
-## File Size Simulator
+### File Size Simulator
 (worked in vscode - local only)
 Purpose: Creates dummy files of specified size for upload tests.
 Inputs: File size (KB/MB), file type.
@@ -208,19 +207,19 @@ Other examples:
 
 to TEST
 
-## Network traffic analyzer
+### Network traffic analyzer
 You enter an url, it fetches all the network calls provided and saves them in a structured way, for you to copy paste and compare with a second url 
 
-## Screenshot Comparator
+### Screenshot Comparator
 Purpose: Compares two screenshots for pixel differences.
 Inputs: Two image files.
 Output: Difference percentage or highlighted diff image.
 
-## Duplicate Finder
+### Duplicate Finder
 Detects and lists duplicate entries in pasted data or CSV files.
 
 
 
-### Session 2:
+## Session 2:
 
 
