@@ -1,68 +1,44 @@
-# Prompt Academy: Practical AI workshop for beginners
+# Prompt Academy — Practical AI Workshop for Beginners
 
-✅ Two-Day AI Training Workshop Plan
+✅ Two-Day Hands-on Workshop
 
-**Audience:**
-Beginners with no prior AI experience.
-**Goal:** Learn to use AI practically across any field.
+**Audience:** Beginners with no prior AI experience
 
-✅ Structure
+**Goal:** Learn practical ways to use AI across workflows and small tools
 
-**Day 1 & Day 2**
+## Day 1 — Agenda (overview)
 
-- Session 1: 1 hrs
-- Break: 60 min
-- Session 2: 1.5 hrs
+- Session 1: 🧠 Hands-On Prompt Techniques (≈50 min)
+- Break: ☕ 60 min
+- Session 2: 🛠️ Data Generation & Cleaning (≈30 min)
+- Session 3: 💡 Vibe Coding — Build your own tools (60 min)
 
-✅ Day 1 Agenda
+### Session 1 — Hands-On Prompt Techniques (50 min)
 
-### Session 1: Hands-On Prompt Techniques (50 min)
+Start with a warm-up puzzle to surface reasoning style:
 
-Start with The Grandfather riddle:
- `when I was 6 years old my grandfather was 10 times my age. now I am 10. two years ago he died. how old was he last year ? answer in one token.`
- follow up with 
- `now explain step by step`
+> Puzzle: when I was 6 years old my grandfather was 10 times my age. now I am 10. two years ago he died. how old was he last year ? (answer in one token)
 
-- Basic Prompt: Ask a simple question. (The `Task`) (e.g., “Explain search engines”). 
-    alternatives:
-        - car engines
-        - how planes fly
-        - how apis work
-        - what does cleaning data mean
-        - what is prompt engineering
-        - what is context window in ai
-        - what is an mcp
+Follow up: `now explain step by step`
 
-- Add `Persona`: “Act as a kindergarden teacher, explain search engines” 
-    alternatives:
-        - university professor
-        - a lawyer
-        - a quality assurance engineer
-        - a human resources manager
-        - a senior developer
+Learning objectives
 
-- Add Output Style (The `Format`): “Act as a kindergarden teacher, explain search engines, be short and concise”
-    alternatives:
-        - with as many details as possible 
-        - in bullet points
-        - as a short story
-        - as a table
-        - as a step by step guide
-        - as a humorous explanation
+- Understand prompt building blocks: Task, Persona, Format, Scope
+- Practice few-shot and negative prompting
+- Try chain-of-thought styles safely (step-by-step explanations)
 
-- Add `Scope`: “Act as a kindergarden teacher, explain search engines for beginners in the tech industry, be short and concise”
-    alternatives:
-        - for people who already know a bit about tech
-        - for high school students
-        - for non-technical adults
-        - for an architect in software development
-        - for business executives
+Practical exercises (examples to run in class)
 
-- `Few-Shot` Prompting: “Act as a kindergarden teacher, explain search engines for beginners in the tech industry
-, be short and concise. here are some examples of good and bad analogies to help you:
-  Examples:
-  - Good: “A search engine is like a warehouse worker who helps you find and bring items quickly.”
-  - Bad: “A search engine is a tool that retrieves indexed data from the internet.”
+- Basic Prompt (The `Task`): Ask a simple question (e.g., “Explain search engines”). Alternatives:
+  - car engines, how planes fly, how APIs work, what does data cleaning mean, what is prompt engineering, what is context window in AI, what is an MCP
+
+- Add `Persona` (change tone): e.g., “Act as a kindergarten teacher, explain search engines”. Alternatives: university professor, lawyer, QA engineer, HR manager, senior developer
+
+- Add `Format` (output style): short & concise, long detailed, bullet points, short story, table, step-by-step guide, humorous
+
+- Add `Scope`: eg. “for beginners in the tech industry” or tailor for high-school students, non-technical adults, architects, or executives
+
+- `Few-Shot` prompting: give 1–2 examples of good/bad outputs to steer style
 
 - `Negative Prompting`: “Act as a kindergarden teacher, explain search engines for beginners in the tech industry
 , be short and concise. here are some examples of good and bad analogies to help you:
@@ -79,19 +55,19 @@ Start with The Grandfather riddle:
   . Do not use technical jargon or librarians analogies. Explain step by step each of your ideas so I would understand better how a search engine works”
 
 
-**Summary & Theory (10 min):**
+**Summary & Theory (10 min)**
 
-- Why prompts matter.
-- Key elements: `task`, `persona`, `format`, `scope`, `few-shot`, `negative`, `chain-of-thought`.
-- Best practices for prompting.
+- Why prompts matter
+- Key elements: `task`, `persona`, `format`, `scope`, `few-shot`, `negative`, `chain-of-thought`
+- Best practices and common pitfalls
 
+### Session 2 — Data Generation & Cleaning (30 min)
 
-### Session 2: Data Generation & Cleaning (30 min)
+Goal: generate messy data, define cleaning rules, and ask AI to clean it.
 
-**Step 1: Generate Messy CSV**
+Step 1 — Generate Messy CSV (class prompt)
 
-AI Chat : Local, chatgpt.com or m365 copilot
-Prompt:
+Prompt idea (AI Chat: local, chatgpt.com, or M365 Copilot):
 
 Generate a CSV file with 200 rows of fictional customer data. Columns: Name, Email, Purchase Amount, Date, and Website Link. I need half of it to be accurate and half to be messy:
 
@@ -113,30 +89,20 @@ Participants create a `.md` file or just a prompt with custom cleaning rules. Ex
 
 ### Data Cleaning Instructions
 
-- email format should be similar to eve.wilson@mailservice.com
+- Email should look like `eve.wilson@mailservice.com`
 - Remove rows where Purchase Amount > 999
-- a name should be made out of one or two words
-- only date format accepted 31/12/2024
-- only link format accepted is with https
+- Names must be 1–2 words and contain no special chars
+- Accept only date format `31/12/2024`
+- Website link must use `https`
 
-Examples of names
+If no rules provided, prompt the class to discuss what “clean” should mean (and show the example fallback message about 0 rows after strict cleaning).
 
-good name:
-- Adrian Maciuc
+Examples (for class discussion):
 
-bad name:
-- AdriAN MaccIUC Rodriguez
-- Ad@rian Maciuc
-- Adrian
-
-example of links:
-good link:
-https://example.com
-
-bad link:
-- link@site
-- http://brokenlink
-
+- Good name: Adrian Maciuc
+- Bad names: AdriAN MaccIUC Rodriguez, Ad@rian Maciuc, Adrian
+- Good link: https://example.com
+- Bad link: link@site, http://brokenlink
 
 Then prompt AI:
 
