@@ -10,15 +10,13 @@ Beginners with no prior AI experience.
 
 **Day 1 & Day 2**
 
-- Session 1: 1.5 hrs
+- Session 1: 1 hrs
 - Break: 60 min
 - Session 2: 1.5 hrs
 
 ✅ Day 1 Agenda
 
-### Session 1: Hands-On Prompting Basics (Practice First)
-
-**Practical Flow (75 min):**
+### Session 1: Hands-On Prompt Techniques (50 min)
 
 Start with The Grandfather riddle:
  `when I was 6 years old my grandfather was 10 times my age. now I am 10. two years ago he died. how old was he last year ? answer in one token.`
@@ -81,32 +79,32 @@ Start with The Grandfather riddle:
   . Do not use technical jargon or librarians analogies. Explain step by step each of your ideas so I would understand better how a search engine works”
 
 
-**Summary & Theory (15 min):**
+**Summary & Theory (10 min):**
 
 - Why prompts matter.
 - Key elements: `task`, `persona`, `format`, `scope`, `few-shot`, `negative`, `chain-of-thought`.
 - Best practices for prompting.
 
 
-### Session 2: Data Generation & Cleaning
+### Session 2: Data Generation & Cleaning (30 min)
 
-**Step 1: Generate Messy CSV (Fun & Realistic)**
+**Step 1: Generate Messy CSV**
 
 AI Chat : Local, chatgpt.com or m365 copilot
 Prompt:
 
-Generate a CSV file with 500 rows of fictional customer data. Columns: Name, Age, Email, Purchase Amount, Date, and Website Link. I need half of it to be accurate and half to be messy:
+Generate a CSV file with 200 rows of fictional customer data. Columns: Name, Email, Purchase Amount, Date, and Website Link. I need half of it to be accurate and half to be messy:
 
-- Typos in names
 - Incomplete emails
-- Wrong characters in numeric columns
 - Missing values
-- Random symbols in Age
+- 5 or more words in name
 - Numbers > 999 in Purchase Amount
+- American and european date formats mixed
 - Website Link column should have broken or incomplete URLs
 
+**Step 2: Ask the AI to simply clean up the data**
 
-**Step 2: Define “Clean” in Markdown**
+**Step 3: Define “Clean” in Markdown**
 
 Possible answer if no definition provided:
 "The data cleaning process is complete. Note: After applying strict cleaning rules, the resulting file contains 0 rows. This means all rows in your original file had at least one critical issue according to the criteria set. If you want to relax the cleaning rules or review the issues found, let me know "
@@ -115,61 +113,49 @@ Participants create a `.md` file or just a prompt with custom cleaning rules. Ex
 
 ### Data Cleaning Instructions
 
-- Remove rows where Purchase Amount > 999
-- a name should be made out of two words - no special characters
-- age should be a number between 1 and 90
 - email format should be similar to eve.wilson@mailservice.com
+- Remove rows where Purchase Amount > 999
+- a name should be made out of one or two words
 - only date format accepted 31/12/2024
 - only link format accepted is with https
 
 Examples of names
 
 good name:
-Adrian Maciuc
+- Adrian Maciuc
 
 bad name:
-AdriAN MaccIUC
-Ad@rian Maciuc
-Adrian
+- AdriAN MaccIUC Rodriguez
+- Ad@rian Maciuc
+- Adrian
 
 example of links:
 good link:
 https://example.com
 
 bad link:
-link@site
-http://brokenlink
+- link@site
+- http://brokenlink
 
 
 Then prompt AI:
 
 Clean this CSV according to the rules in the markdown file.
 
-**From Session 2: Messy Data Challenge**
-
-- Generate your own messy CSV with the extra Website Link column.
-- Write cleaning instructions in Markdown:
-  - Include at least one custom rule (e.g., “Numbers bigger than 3 digits should not be in column X”).
-  - Include a rule for fixing broken URLs.
-
-- Prompt AI to clean the data according to your rules.
-- Bonus: Ask AI to fetch additional info from the Website Link column (e.g., “Visit each link and summarize the homepage content”).
-- Document what worked and what didn’t.
 
 
-
-
-✅ Day 2 Agenda
-
-## Session 1: Vibe Coding - Build your own tools
+## Session 3: Vibe Coding - Build your own tools (60 min)
 
 Discuss briefly about the Planning Pattern
 
-Planning and agentic approach on executing tasks
-
+### Planning and agentic approach on executing tasks
 "help me develop a plan to build this app"
 "I need you to create a markdown file for instructions for an agent to build this app"
 "based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it in one single file, do it. use javascript" 
+
+Create an account on loveable.dev (free plan is enough)
+
+
 
 Example of tool to build:
 ### JSON Formatter & Diff Checker
@@ -183,7 +169,6 @@ You pick a locale and a time zone and you pick a second locale . Entering a cert
 ### Create a daily to-do app for yourself where:
 (worked well in chatgpt - chatgpt hosted - only js and html)
 you can add tasks, remove tasks, mark tasks as done
-you can set reminders for tasks that popup at a certain time
 you can add notes to tasks if needed
 you can mark them partially done
 you can generate at the end of the day a summary of all tasks done  
@@ -207,18 +192,29 @@ Other examples:
 
 to TEST
 
+### Data Anonymizer: Replace PII in CSVs with realistic but fake values or with encrypted values.
+
+### Localization QA Tool: Side-by-side string comparison for locales with length warnings and missing keys.
+
+### Voice Note Transcriber: Record short audio in-browser → transcribe to text
+
+### Dependency Visualizer: Visual graph of package.json dependencies and quick risks.
+
+### text extractor from images: upload images, it extracts all text from them and provides a structured output
+
+
+
+
 ### Network traffic analyzer
 You enter an url, it fetches all the network calls provided and saves them in a structured way, for you to copy paste and compare with a second url 
 
-### Screenshot Comparator
-Purpose: Compares two screenshots for pixel differences.
-Inputs: Two image files.
-Output: Difference percentage or highlighted diff image.
 
 ### Duplicate Finder
 Detects and lists duplicate entries in pasted data or CSV files.
 
 
+
+✅ Day 2 Agenda
 
 ## Session 2:
 
