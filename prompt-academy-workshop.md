@@ -149,12 +149,18 @@ Clean this CSV according to the rules in the markdown file.
 Discuss briefly about the Planning Pattern
 
 ### Planning and agentic approach on executing tasks
-"help me develop a plan to build this app"
-"I need you to create a markdown file for instructions for an agent to build this app"
-"based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it in one single file, do it. use javascript" 
+- "help me develop a plan to build this app"
+- "I need you to create a markdown file for instructions for an agent to build this app"
+- "based on this plan, start writing the code for this app, try to be as simple as possible, if you can have it in one single file, do it. use javascript" 
 
-Create an account on loveable.dev (free plan is enough)
+Step 1: Create an app on chatgpt.com or on copilot. Choose an example from below. 
 
+Step 2: Use the above planning steps to create a plan and then generate the code.
+
+Step 3: Only I create an account on loveable.dev (free plan is enough) 
+
+## ✅ Home assignment after Day 1:
+- Choose any app from below, and build an app on loveable.dev
 
 
 Example of tool to build:
