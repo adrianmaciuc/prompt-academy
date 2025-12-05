@@ -123,10 +123,10 @@ Step 1: Create an app on chatgpt.com or on copilot. Choose an example from below
 
 Step 2: Use the above planning steps to create a plan and then generate the code.
 
-Step 3: Only I create an account on loveable.dev (free plan is enough) 
+Step 3: Only I create an account on loveable.dev or v0.app (free plan is enough) 
 
 ## ✅ Home assignment after Day 1:
-- Choose any app from below, and build an app on loveable.dev
+- Choose any app from below, and build an app on loveable.dev or v0.app (free plan is enough)
 
 
 Example of tool to build:
@@ -145,20 +145,6 @@ you can add notes to tasks if needed
 you can mark them partially done
 you can generate at the end of the day a summary of all tasks done  
 
-### Test Data Generator (Mini Edition)
-(worked in vscode - copilot - local)
-You choose a data type—email, phone number, username, date range, numeric bounds—and it spits out valid, invalid, and borderline values. It’s like a vending machine for edge cases.
-
-### Tiny State Machine Visualizer
-(worked in vscode - multiple inputs to fix - local)
-You define states and transitions via quick text input, and it produces a diagram plus transition validation. Handy for spotting impossible or missing flows in UI logic.
-
-### File Size Simulator
-(worked in vscode - local only)
-Purpose: Creates dummy files of specified size for upload tests.
-Inputs: File size (KB/MB), file type.
-Output: Generated file.
-You can also create a dummy file as a csv file with x number of rows and y number of columns with random data inside
 
 Other examples:
 
@@ -168,12 +154,7 @@ to TEST
 
 ### Localization QA Tool: Side-by-side string comparison for locales with length warnings and missing keys.
 
-### Voice Note Transcriber: Record short audio in-browser → transcribe to text
-
 ### Dependency Visualizer: Visual graph of package.json dependencies and quick risks.
-
-### text extractor from images: upload images, it extracts all text from them and provides a structured output
-
 
 
 
@@ -191,3 +172,23 @@ Detects and lists duplicate entries in pasted data or CSV files.
 ## Session 2:
 
 
+### Test Data Generator (Mini Edition)
+(worked in vscode - copilot - local)
+You choose a data type—email, phone number, username, date range, numeric bounds—and it spits out valid, invalid, and borderline values. It’s like a vending machine for edge cases.
+
+### Tiny State Machine Visualizer
+(worked in vscode - multiple inputs to fix - local)
+You define states and transitions via quick text input, and it produces a diagram plus transition validation. Handy for spotting impossible or missing flows in UI logic.
+
+### File Size Simulator
+(worked in vscode - local only)
+Purpose: Creates dummy files of specified size for upload tests.
+Inputs: File size (KB/MB), file type.
+Output: Generated file.
+You can also create a dummy file as a csv file with x number of rows and y number of columns with random data inside
+
+### Voice Note Transcriber: Record short audio in-browser → transcribe to text
+(build on chatgpt.com but worked in vscode - local only)
+
+### text extractor from images: upload images, it extracts all text from them and provides a structured output
+(build on chatgpt.com but worked in vscode after several inputs - local only)
